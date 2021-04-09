@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-background-color="#095256">
+                <h1>turaosvenyek.hu</h1>
+                <p>
+                    Kickoff
+                </p>
+            </section>
+            <section data-background-color="#f9dc5c">
+                <h2>Agenda</h2>
+                <ul>
+                    <li>Első verzió (Kéktúraszakaszok)</li>
+                    <li>Mit szeretnék?</li>
+                    <li>Most hogy állunk?</li>
+                    <li>Ötletek</li>
+                    <li>Elnevezések</li>
+                    <li>Menetrend</li>
+                    <li>Linkek</li>
+                </ul>
+            </section>
+            <section data-background-color="#232b2b">
+                <h2>Első verzió</h2>
+                <p>
+                    <a href="https://kektura-szakaszok.lencse.io/" target="_blank">
+                        https://kektura-szakaszok.lencse.io/
+                    </a>
+                </p>
+                <div class="r-stack">
+                    <div class="fragment fade-in-then-out">
+                        <h3>A probléma</h3>
+                        <ul>
+                            <li>heyjoe.hu</li>
+                            <li>Útvonal megrajzolása, ellenőrzése</li>
+                            <li>GPX letöltés</li>
+                            <li>gpx2kml.com</li>
+                            <li>Mobilra áttrükközni</li>
+                            <li>Hurrá.</li>
+                        </ul>
+                    </div>
+                    <div class="fragment fade-in-then-out">
+                        <h3>A megoldás</h3>
+                        <ul>
+                            <li>Két dropdown:
+                                <ul>
+                                    <li>Honnan?</li>
+                                    <li>Hová?</li>
+                                </ul>
+                            </li>
+                            <li>KML letöltés</li>
+                        </ul>
+                        <p>
+                            Bónusz ötlet: Térkép (analytics)
+                        </p>
+                    </div>
+                    <div class="fragment fade-in">
+                        <h3>Voilá</h3>
+                        <p>
+                            <img src="img/kektura-szakaszok.png" alt="Kéktúra szakaszok" width="40%" height="40%">
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section data-background-color="#ed254e">
+                <h2>Mi a "core value"</h2>
+                <ul>
+                    <li class="fragment">Kiválasztással adhatók meg az adatok, nem térképen kell vakarászni</li>
+                    <li class="fragment">Ezért jól használható mobilon is</li>
+                    <li class="fragment">A térkép letisztult, jól látszanak a tájak, nem nyomja agyon a látványt
+                        a túrautak jelzése</li>
+                </ul>
+            </section>
+            <section data-background-color="#ed254e">
+                <h2>Ezt kellene megtartani, egy nagyobb lélegzetű appban</h2>
+            </section>
+            <section data-background-color="#320a28">
+                <h2>Mit szeretnék?</h2>
+                <ul>
+                    <li class="fragment">Ne csak a kéktúrát tudja</li>
+                    <li class="fragment">DDK, AK, Egyéb kéktúrák</li>
+                    <li class="fragment">Palóc/Rákóczi piros</li>
+                    <li class="fragment">Nagy-szénás kör</li>
+                    <li class="fragment">Kinizsi 100</li>
+                    <li class="fragment">Inen-onnan lenyúlt utak (Rám-szakadék, Spartacus-ösvény)</li>
+                    <li class="fragment">Saját túrák (Karanténtúra, Kő-hegy stb.)</li>
+                </ul>
+            </section>
+            <section data-background-color="#320a28">
+                <h2>Mit szeretnék?</h2>
+                <ul>
+                    <ul>
+                        <li class="fragment">Túra ajánló, rendes tartalommal (képek, leírás, adatok)</li>
+                        <li class="fragment">Nehézségi szintek</li>
+                        <li class="fragment">Szűrő különböző szempontok alapján</li>
+                        <li class="fragment">Letérők, látnivalók</li>
+                    </ul>
+            </section>
+            <section data-background-color="#320a28">
+                <h2>Mit szeretnék?</h2>
+                <ul>
+                    <li class="fragment">Több túraszakasz összepattintása, különböző színekkel (<a
+                            href="https://kektura-szakaszok.lencse.io/.netlify/functions/planner/26-32-999999_43-100-999999_111-136-999999_0-5-eb3853_5-17-ffdc5e_17-23-333333_23-26-294aeb_32-38-294aeb_38-43-1dad38_100-111-aa27c4_136-151-29e9ea"
+                            target="_blank">mint
+                            itt</a>)</li>
+                    <li class="fragment">Túratervet URL alapján lehessen továbbküldeni</li>
+                    <li class="fragment">Túra adatai: hossz, szintkülönbség, szintrajz</li>
+                    <li class="fragment">Maradjon meg a térkép exportálása</li>
+                </ul>
+                </ul>
+            </section>
+            <section data-background-color="#320a28">
+                <h2>Mit szeretnék?</h2>
+                <p>Illetve kelleni fog valamilyen blog jellegű tartalmi rész (szolgálati közlemények, új túraútvonalak,
+                    stb.)
+                </p>
+                <p>
+                    A túrák leírása is legyen egy kívülről linkelhető oldal!
+                </p>
+            </section>
+            <section data-background-color="#17455a">
+                <h2>Most hogy állunk</h2>
+                <p>
+                    Röviden: <a href="https://turaosvenyek.hu/" target="_blank">ÍGY</a>
+                </p>
+                <ul class="fragment">
+                    <li>React.js</li>
+                    <li>Élőben frissül a térkép</li>
+                    <li>Kezel több túraútvonalat (DDK és AK van meg)</li>
+                    <li>Több szakaszt lehet egy térképre rakni</li>
+                </ul>
+            </section>
+            <section data-background-color="#f9dc5c">
+                <h2>Technikai kihívások</h2>
+                <p>Túrautak, GPX-ek, frissüljenek-e rendszeresen, stb.</p>
+            </section>
+            <section data-background-color="#095256">
+                <h2>Ötletek</h2>
+                <p>
+                    <img src="img/ideas.gif">
+                </p>
+            </section>
+            <section data-background-color="#f9dc5c">
+                <h2>Elnevezések</h2>
+                <ul>
+                    <li class="fragment">Ez egy nagyon fontos kérdés! - <a
+                            href="https://thedomaindrivendesign.io/developing-the-ubiquitous-language/" target="_blank">
+                            Ubiquitous language</a></li>
+                    <li class="fragment">Jó lenne angol és magyar nevet is találni a fogalmaknak</li>
+                </ul>
+            </section>
+            <section data-background-color="#ed254e">
+                <h2>Menetrend</h2>
+                <ul>
+                    <li>Mi legyen az első verzióban?</li>
+                    <li>Ki milyen szerepet szeretne?</li>
+                    <li>Milyen meetingek legyenek
+                        <ul>
+                            <li>Legyen még ötletelős session?</li>
+                            <li>Legyen elnevezős session? (Legyen!)</li>
+                        </ul>
+                    </li>
+                    <li>Kb milyen sorrendben épüljenek a funkciók?</li>
+                </ul>
+            </section>
+            <section data-background-color="#232b2b">
+                <h2>Linkek</h2>
+                <ul>
+                    <li>App: <a href="https://turaosvenyek.hu/">https://turaosvenyek.hu/</a></li>
+                    <li>Forráskód: <a href="https://github.com/lencse/hikingtrails">https://github.com/lencse/hikingtrails</a></li>
+                    <li>Slack: <a href="https://turaosvenyekhu.slack.com/">https://turaosvenyekhu.slack.com/</a></li>
+                    <li>Sonarcloud (code quality): <a href="https://sonarcloud.io/dashboard?id=lencse_hikingtrails">https://sonarcloud.io/dashboard?id=lencse_hikingtrails</a></li>
+                    <li>Coveralls (test coverage): <a href="https://coveralls.io/github/lencse/hikingtrails">https://coveralls.io/github/lencse/hikingtrails</a></li>
+                </ul>
+            </section>
+        </div>
+
+
+        </section>
+    </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>
